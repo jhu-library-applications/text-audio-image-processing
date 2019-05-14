@@ -14,9 +14,9 @@ else:
 if args.suffix:
     suffix = args.suffix
 else:
-    suffix = raw_input('Enter the suffix that exists after the file number in the file name: ')
+    suffix = input('Enter the suffix that exists after the file number in the file name: ')
 
-f = csv.writer(open(baseFileName + suffix + 'Combined.csv', 'wb'))
+f = csv.writer(open(baseFileName + suffix + 'Combined.csv', 'w'))
 
 fileNum = 1
 file = baseFileName +str(fileNum) + suffix + '.csv'
